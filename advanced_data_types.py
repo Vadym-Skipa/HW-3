@@ -127,7 +127,7 @@ for num in range(1, 11):
         d[num] = num ** 2
 print("\t", d)
 
-d_comprehension = {num: num ** 2 for num in range(1, 11)}
+d_comprehension = {num: num ** 2 for num in range(1, 11) if num % 2 == 1}
 print("\tDict created by dict comprehension:")
 print("\t", d_comprehension)
 
